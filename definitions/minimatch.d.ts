@@ -4,7 +4,7 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare module "minimatch" {
-
+ 
 	function M(target: string, pattern: string, options?: M.IOptions): boolean;
 
 	module M {
@@ -42,7 +42,7 @@ declare module "minimatch" {
 			negate: boolean;
 			comment: boolean;
 			empty: boolean;
-
+                        empty: boolean;
 			makeRe(): RegExp; // regexp or boolean
 			match(fname: string): boolean;
 			matchOne(files: string[], pattern: string[], partial: boolean): boolean;
